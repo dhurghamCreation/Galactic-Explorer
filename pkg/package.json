@@ -1,0 +1,16 @@
+{
+  "name": "galactic_explorer",
+  "type": "module",
+  "description": "A professional-grade galactic exploration game built with Bevy ECS",
+  "version": "0.7.0",
+  "files": [
+    "galactic_explorer_bg.wasm",
+    "galactic_explorer.js",
+    "galactic_explorer.d.ts"
+  ],
+  "main": "galactic_explorer.js",
+  "types": "galactic_explorer.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
