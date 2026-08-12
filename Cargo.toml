@@ -1,0 +1,41 @@
+[package]
+name = "galactic_explorer"
+version = "0.7.0"
+edition = "2021"
+description = "A professional-grade galactic exploration game built with Bevy ECS"
+
+[workspace]
+members = [
+    "crates/core",
+    "crates/assets",
+    "crates/rendering",
+    "crates/physics",
+    "crates/ui",
+    "crates/data",
+]
+
+[features]
+default = ["high-quality"]
+high-quality = []
+medium-quality = []
+low-quality = []
+
+[dependencies]
+galactic_explorer_core = { path = "crates/core" }
+galactic_explorer_assets = { path = "crates/assets" }
+galactic_explorer_rendering = { path = "crates/rendering" }
+galactic_explorer_physics = { path = "crates/physics" }
+galactic_explorer_ui = { path = "crates/ui" }
+galactic_explorer_data = { path = "crates/data" }
+
+bevy = { version = "0.13", features = ["jpeg", "png", "hdr", "bevy_gltf", "bevy_pbr", "bevy_audio", "vorbis", "wav", "mp3", "flac"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+log = "0.4"
+env_logger = "0.11"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+thiserror = "1"
+anyhow = "1"
+futures = "0.3"

@@ -1,0 +1,13 @@
+[package]
+name = "galactic_explorer_physics"
+version = "0.7.0"
+edition = "2021"
+description = "Physics engine - orbital mechanics, collision, flight dynamics"
+
+[dependencies]
+galactic_explorer_core = { path = "../core" }
+bevy = { version = "0.13", features = ["jpeg", "png"] }
+serde = { version = "1.0", features = ["derive"] }
+rand = "0.8"
+thiserror = "1"
+log = "0.4"

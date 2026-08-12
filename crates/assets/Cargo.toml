@@ -1,0 +1,14 @@
+[package]
+name = "galactic_explorer_assets"
+version = "0.7.0"
+edition = "2021"
+description = "Asset pipeline - async loading, caching, and management"
+
+[dependencies]
+galactic_explorer_core = { path = "../core" }
+bevy = { version = "0.13", features = ["jpeg", "png", "hdr", "bevy_gltf"] }
+serde = { version = "1.0", features = ["derive"] }
+rand = "0.8"
+thiserror = "1"
+futures = "0.3"
+log = "0.4"

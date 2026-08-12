@@ -1,0 +1,47 @@
+{
+  "version": "0.7.0",
+  "player_health": 0,
+  "player_fuel": 75.0,
+  "discoveries": 0,
+  "discovered_planets": [],
+  "current_difficulty": "Medium",
+  "mission_state": {
+    "discoveries": 0,
+    "discovered": [],
+    "xp": 0,
+    "tier": 1,
+    "unlocked_rewards": [],
+    "challenge_name": "Asteroid Dodge",
+    "challenge_progress": 0,
+    "challenge_goal": 12,
+    "last_event": "Ship destroyed.",
+    "current_objectives": [
+      {
+        "id": 1,
+        "title": "First Discovery",
+        "description": "Scan your first celestial body",
+        "target": null,
+        "progress": 0,
+        "goal": 1,
+        "completed": false,
+        "reward_xp": 100,
+        "reward_unlock": "Enhanced Scanner"
+      },
+      {
+        "id": 2,
+        "title": "Solar System Tour",
+        "description": "Discover all 8 major planets",
+        "target": null,
+        "progress": 0,
+        "goal": 8,
+        "completed": false,
+        "reward_xp": 500,
+        "reward_unlock": "Fuel Efficiency Upgrade"
+      }
+    ],
+    "completed_objectives": [],
+    "total_missions_completed": 0
+  },
+  "play_time": 0.0,
+  "timestamp": "2024-01-01T00:00:00Z"
+}

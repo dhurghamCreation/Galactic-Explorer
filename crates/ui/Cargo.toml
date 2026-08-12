@@ -1,0 +1,15 @@
+[package]
+name = "galactic_explorer_ui"
+version = "0.7.0"
+edition = "2021"
+description = "UI layer - menus, HUD, settings, minimap"
+
+[dependencies]
+galactic_explorer_core = { path = "../core" }
+galactic_explorer_physics = { path = "../physics" }
+galactic_explorer_rendering = { path = "../rendering" }
+bevy = { version = "0.13", features = ["jpeg", "png"] }
+serde = { version = "1.0", features = ["derive"] }
+rand = "0.8"
+thiserror = "1"
+log = "0.4"
