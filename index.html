@@ -12,18 +12,16 @@
             overflow: hidden;
             background-color: #000;
         }
-        /* Style any canvas injected or used by Bevy */
-        canvas {
-            width: 100vw !important;
-            height: 100vh !important;
-            display: block !important;
-            position: absolute;
-            top: 0;
-            left: 0;
+        #bevy-canvas {
+            width: 100vw;
+            height: 100vh;
+            display: block;
         }
     </style>
 </head>
 <body>
+    <canvas id="bevy-canvas"></canvas>
+
     <script type="module">
         import init from "./pkg/galactic_explorer.js";
 

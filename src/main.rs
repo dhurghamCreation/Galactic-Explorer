@@ -574,6 +574,9 @@ fn main() {
                 title: "GALACTIC EXPLORER: DISCOVERY PRO".into(),
                 resolution: (1400.0, 900.0).into(),
                 resize_constraints: WindowResizeConstraints { min_width: 800.0, min_height: 600.0, max_width: 2560.0, max_height: 1440.0, ..default() },
+                // Add this line to target the HTML canvas on web:
+                #[cfg(target_arch = "wasm32")]
+                canvas: Some("#bevy-canvas".into()),
                 ..default()
             }),
             ..default()
