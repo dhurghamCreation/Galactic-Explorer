@@ -12,14 +12,17 @@
             overflow: hidden;
             background-color: #000;
         }
-        canvas {
-            width: 100% !important;
-            height: 100% !important;
+        #bevy-canvas {
+            width: 100vw;
+            height: 100vh;
             display: block;
         }
     </style>
 </head>
 <body>
+    <!-- Explicit canvas for Bevy to render onto -->
+    <canvas id="bevy-canvas"></canvas>
+
     <script type="module">
         import init from "./pkg/galactic_explorer.js";
 
